@@ -728,10 +728,37 @@ main {
   height: 20px;
 }
 
+/* Desktop footer style */
+.desktop-footer{
+  border-left: 10px solid var(--light-gray);
+  width: 300px;
+  padding: 10px;
+  height: 150px ;
+  margin-top: 20px;
+  background-color: #EFEBE9;
+  margin-bottom: 20px;
+  
+}
+.desktop-footer img{
+  width: 157px;
+
+}
+.desktop-footer span{
+  font-size: 11px;
+}
+.desktop-footer-links{
+
+}
+.desktop-footer-links a{
+  color: var(--gray);
+  margin-right: 3px;
+  font-size: 14px;
+}
 /* Footer Section Style */
 footer{
   height: 298px;
   background-color: black;
+  display: none;
 }
 .footer-navbar{
   height: 43px;
@@ -766,6 +793,9 @@ footer{
 .footer-copyright span{
   font-size: 14px;
   font-weight: 400;
+}
+.footer-copyright span a{
+  color: #fff;
 }
 .footer-menu{
   text-align: center;
@@ -831,6 +861,9 @@ footer{
     display: block;
   }
   .brands-section{
+    display: block;
+  }
+  footer{
     display: block;
   }
 }
