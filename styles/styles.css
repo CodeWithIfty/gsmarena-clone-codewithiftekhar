@@ -705,6 +705,98 @@ main {
   font-weight: lighter;
   color: var(--gray);
 }
+
+/* Brands Section Style */
+.brands-section{
+  display: none;
+}
+.brands-name{
+  padding: 10px;
+  border-bottom: 1px solid var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brands-name h3{
+  font-size: 17px;
+  font-weight: lighter;
+
+  text-transform: uppercase;
+}
+.brands-name img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer Section Style */
+footer{
+  height: 298px;
+  background-color: black;
+}
+.footer-navbar{
+  height: 43px;
+  background-color: var(--light-gray);
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.footer-navbar h2{
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+.footer-social-icon{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 20px;
+  margin-top: 20px;
+}
+.footer-social-icon i{
+  color: var(--light-gray);
+  font-size: 27px;
+}
+.footer-copyright{
+  color: white;
+  margin: 30px 0px;
+  text-align: center;
+}
+.footer-copyright span{
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-menu{
+  text-align: center;
+}
+.footer-menu a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+  border-right: 2px solid #fff;
+  padding: 0px 9px 3px 8px;
+}
+.phone-finder-btn{
+  background-color: #d50000;
+  margin: auto;
+  width: 180px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.phone-finder-btn img{
+  width: 25px;
+  height: 25px;
+}
+.phone-finder-btn h3{
+  font-size: 23px;
+  font-weight: bold;
+}
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
   .search-box {
@@ -738,10 +830,14 @@ main {
   .review-section{
     display: block;
   }
+  .brands-section{
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 640px) {
   .trending-products {
     display: none;
   }
+
 }
