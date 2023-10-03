@@ -48,12 +48,20 @@ nav {
   list-style: none;
   justify-content: space-around;
   align-items: center;
-  padding-top: 10px;
+
   color: var(--gray);
   font-size: 14px;
   font-weight: lighter;
   flex-wrap: wrap;
   text-transform: uppercase;
+}
+.nav-list li{
+  padding: 12px;
+}
+.nav-list li:hover{
+ background-color: #d50000;
+ color: white;
+
 }
 .menu-icon {
   font-size: 26px;
