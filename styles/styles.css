@@ -216,35 +216,32 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 3px;
-  padding: 3px;
+  padding: 5px;
 }
 
 .menu-item-container ul {
   list-style: none;
   text-align: center;
   text-transform: uppercase;
-  padding: 0px 5px;
+
   width: 100%;
 }
 
 .menu-item-container ul {
   width: 100%;
 }
+.menu-item-container ul li{
+  padding: 0px 10px;
+  color: var(--gray);
+  font-size: 14px;
+}
 .menu-item-container ul li:hover {
   background-color: #d50000;
-}
-.menu-item-container ul li a:hover {
   color: white;
+
 }
 .border-right-gray {
   border-right: 1px solid var(--light-gray);
-}
-
-.menu-item-container ul li a {
-  text-decoration: none;
-  color: var(--gray);
-  font-size: 14px;
 }
 
 .sidebar-menu-bottom {
@@ -518,6 +515,12 @@ main {
 
   padding-top: 10px;
 }
+.news-item:hover{
+  transform: scale(1.003);
+  box-shadow: 0px 6px 15px 3px rgba(84, 81, 81, 0.2);
+  transition-duration: .5s;
+}
+
 
 .news-img {
   width: 298px;
@@ -538,6 +541,9 @@ main {
   color: #555;
   font-size: 23px;
   font-weight: lighter;
+}
+.news-title h3:hover{
+  color: #d50000;
 }
 
 .news-title p {
@@ -577,6 +583,70 @@ main {
 .news-comment img {
   width: 18px;
   height: 18px;
+}
+
+/* second news section */
+.second-news-post {
+margin-top: 10px;
+  height: 314px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-post-topbar {
+  position: absolute;
+  border-bottom: 1px solid white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+}
+
+.posted-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  gap: 5px;
+  color: white;
+}
+
+.posted-date i {
+  font-size: 15px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  gap: 5px;
+  color: white;
+}
+
+.comment img {
+  width: 15px;
+  height: 15px;
+}
+
+.post-title {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 22px;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  z-index: 2;
+  /* padding: 8px; */
+}
+
+.post-title h2 a {
+  text-decoration: none;
+  color: #fff;
+  background: url(../assets/pattern-diag-dark-33.png) repeat;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 /* TOP 10 INterest Table styles */
@@ -809,6 +879,7 @@ main {
   margin-top: 20px;
   background-color: #efebe9;
   margin-bottom: 20px;
+  position: fixed;
 }
 .desktop-footer img {
   width: 157px;
