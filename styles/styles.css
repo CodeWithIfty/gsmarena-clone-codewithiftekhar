@@ -54,7 +54,13 @@ nav {
   display: flex;
   align-items: center;
   margin-right: 40px;
+  cursor: pointer;
 }
+.search-box:hover{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+
 
 .search-box input {
   letter-spacing: 0.2px;
@@ -65,6 +71,10 @@ nav {
   color: #fff;
   outline: none;
   background-color: var(--light-gray);
+}
+.search-box input:focus{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 
 ::placeholder {
@@ -104,6 +114,10 @@ nav {
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.navbar-icons a:hover{
+  background-color: red;
 }
 
 .navbar-icons a i {
@@ -154,6 +168,9 @@ main {
   align-items: center;
   cursor: pointer;
 }
+.phone-finder:hover{
+  background-color: #D50000;
+}
 
 .phone-finder img {
   width: 20px;
@@ -166,15 +183,9 @@ main {
 }
 
 .menu-item-container {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(16%, #ebecec),
-    color-stop(87%, #e3e5e5)
-  );
+background-color: #F2F2F2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   gap: 3px;
   padding: 3px;
@@ -185,8 +196,18 @@ main {
   text-align: center;
   text-transform: uppercase;
   padding: 0px 5px;
+  width: 100%;
 }
 
+.menu-item-container ul {
+  width: 100%;
+}
+.menu-item-container ul li:hover{
+  background-color: #D50000;
+}
+.menu-item-container ul li a:hover{
+  color: white;
+}
 .border-right-gray {
   border-right: 1px solid var(--light-gray);
 }
@@ -210,19 +231,29 @@ main {
 .all-brand {
   display: flex;
   justify-content: center;
+
   align-items: center;
   text-transform: uppercase;
   font-size: 13px;
   gap: 6px;
+  width: 100%;
+  height: 100%;
 }
-
+.all-brand:hover{
+  background-color: #D50000;
+}
 .rumor-mill {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
   text-transform: uppercase;
+  font-size: 13px;
   gap: 6px;
+  width: 100%;
+  height: 100%;
+}
+.rumor-mill:hover{
+  background-color: #D50000;
 }
 
 .list-icon {
@@ -257,6 +288,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  z-index: 1;
 }
 
 .posted-date {
@@ -266,6 +298,7 @@ main {
   font-size: 11px;
   gap: 5px;
   color: white;
+
 }
 
 .posted-date i {
@@ -293,6 +326,7 @@ main {
   margin-left: 10px;
   margin-right: 20px;
   font-size: 25px;
+  z-index: 2;
   /* padding: 8px; */
 }
 
@@ -302,6 +336,7 @@ main {
   background: url(../assets/pattern-diag-dark-33.png) repeat;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
+
 
 .sec-col-posts {
   width: 312px;
@@ -322,6 +357,7 @@ main {
   margin-left: 10px;
   margin-right: 20px;
   font-size: 15px;
+  z-index: 1;
 }
 
 .small-post-title h2 a {
@@ -334,10 +370,21 @@ main {
 .post-img img {
   width: 100%;
   height: 314px;
-}
+  z-index: 0;
 
+}
+.post-img:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+
+}
 .small-post-img img {
   width: 100%;
+  z-index: 0;
+}
+.small-post-img img:hover{
+  transform: scale(1.05);
+  transition-duration: .5s ;
 }
 
 .more-reviews-list-toggle {
@@ -482,6 +529,7 @@ main {
   padding-right: 25px;
   padding-bottom: 13px;
   gap: 15px;
+  
 }
 
 .news-posted-date {
@@ -491,6 +539,7 @@ main {
   font-size: 13px;
   gap: 5px;
   color: #6c6666;
+
 }
 
 .news-comment {
