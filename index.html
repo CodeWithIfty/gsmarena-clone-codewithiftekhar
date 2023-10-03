@@ -15,7 +15,7 @@
         <!-- Navbar Start -->
         <nav>
             <div class="nav-container">
-                <div class="menu-icon">
+                <div class="menu-icon" id="menuIcon" onclick="showNavMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <div class="logo">
@@ -38,6 +38,20 @@
                         <a href=""><i class="fa-solid fa-user-plus"></i></a>
                     </div>
                 </div>
+
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li>home</li>
+                    <li>News</li>
+                    <li>Reviews</li>
+                    <li>COVERAGE</li>
+                    <li>home</li>
+                    <li>DEALS</li>
+                    <li>PHONE FINDER</li>
+                    <li>COVERAGE</li>
+                    <li>COVERAGE</li>
+                </ul>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -45,7 +59,7 @@
     <!-- Header Section End -->
 
     <!-- Main Section Start -->
-    <main>
+    <main id="main">
         <!-- Sidebar Start -->
         <div class="sidebar">
             <!-- Sidebar Menu Start -->
@@ -348,7 +362,8 @@
                     <a href="">News</a>
                     <a href="">News</a>
                 </div>
-                <span>&copy; 2023-2024 GSMarena.com | Designed by <a href="https://github.com/codewithiftekhar">CodeWithIftekhar</a></span>
+                <span>&copy; 2023-2024 GSMarena.com | Designed by <a
+                        href="https://github.com/codewithiftekhar">CodeWithIftekhar</a></span>
             </div>
         </div>
         <!-- Sidebar End -->
@@ -793,7 +808,8 @@
             <i class="fa-brands fa-quora"></i>
         </div>
         <div class="footer-copyright">
-            <span>&copy; 2023-2024 GSMarena.com | Designed by <a href="https://github.com/codewithiftekhar">CodeWithIftekhar</a></span>
+            <span>&copy; 2023-2024 GSMarena.com | Designed by <a
+                    href="https://github.com/codewithiftekhar">CodeWithIftekhar</a></span>
         </div>
         <div class="footer-menu">
             <a href="">Privacy</a>
@@ -808,6 +824,22 @@
     </footer>
     <!-- FontAwesome CDN -->
     <script src="https://kit.fontawesome.com/c681ce1328.js" crossorigin="anonymous"></script>
+
+    <script>
+const navMenu = document.getElementById('navMenu');
+const main = document.getElementById('main');
+navMenu.style.display = "none";
+main.style.marginTop = "0"
+    const showNavMenu = () => {
+        if (navMenu.style.display === "none" || navMenu.style.display === "") {
+            navMenu.style.display = "block";
+            main.style.marginTop = "45px"
+        } else {
+            navMenu.style.display = "none";
+            main.style.marginTop = "0px"
+        }
+    }
+    </script>
 </body>
 
 </html>

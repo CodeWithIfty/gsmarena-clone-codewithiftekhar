@@ -34,13 +34,34 @@ nav {
   align-items: center;
   overflow: hidden;
 }
-
+.nav-menu {
+  max-width: 1051px;
+  height: 45px;
+  margin: auto;
+  position: relative;
+  background-color: #E0E0E0;
+  display: flex;
+  align-items: center;
+}
+.nav-list{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: lighter;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
 .menu-icon {
   font-size: 26px;
   color: white;
   margin-left: 10px;
   margin-right: 10px;
   float: left;
+  cursor: pointer;
 }
 
 .logo img {
@@ -56,11 +77,10 @@ nav {
   margin-right: 40px;
   cursor: pointer;
 }
-.search-box:hover{
+.search-box:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border: 1px solid #fff;
 }
-
 
 .search-box input {
   letter-spacing: 0.2px;
@@ -72,7 +92,7 @@ nav {
   outline: none;
   background-color: var(--light-gray);
 }
-.search-box input:focus{
+.search-box input:focus {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border: 1px solid #fff;
 }
@@ -116,7 +136,7 @@ nav {
   padding-left: 20px;
 }
 
-.navbar-icons a:hover{
+.navbar-icons a:hover {
   background-color: red;
 }
 
@@ -145,6 +165,7 @@ main {
   margin: auto;
   display: flex;
   gap: 5px;
+  margin-top: 30px;
 }
 
 .sidebar {
@@ -168,8 +189,8 @@ main {
   align-items: center;
   cursor: pointer;
 }
-.phone-finder:hover{
-  background-color: #D50000;
+.phone-finder:hover {
+  background-color: #d50000;
 }
 
 .phone-finder img {
@@ -183,7 +204,7 @@ main {
 }
 
 .menu-item-container {
-background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -202,10 +223,10 @@ background-color: #F2F2F2;
 .menu-item-container ul {
   width: 100%;
 }
-.menu-item-container ul li:hover{
-  background-color: #D50000;
+.menu-item-container ul li:hover {
+  background-color: #d50000;
 }
-.menu-item-container ul li a:hover{
+.menu-item-container ul li a:hover {
   color: white;
 }
 .border-right-gray {
@@ -239,8 +260,8 @@ background-color: #F2F2F2;
   width: 100%;
   height: 100%;
 }
-.all-brand:hover{
-  background-color: #D50000;
+.all-brand:hover {
+  background-color: #d50000;
 }
 .rumor-mill {
   display: flex;
@@ -252,8 +273,8 @@ background-color: #F2F2F2;
   width: 100%;
   height: 100%;
 }
-.rumor-mill:hover{
-  background-color: #D50000;
+.rumor-mill:hover {
+  background-color: #d50000;
 }
 
 .list-icon {
@@ -298,7 +319,6 @@ background-color: #F2F2F2;
   font-size: 11px;
   gap: 5px;
   color: white;
-
 }
 
 .posted-date i {
@@ -337,7 +357,6 @@ background-color: #F2F2F2;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-
 .sec-col-posts {
   width: 312px;
 }
@@ -371,20 +390,18 @@ background-color: #F2F2F2;
   width: 100%;
   height: 314px;
   z-index: 0;
-
 }
-.post-img:hover{
+.post-img:hover {
   transform: scale(1.1);
   transition-duration: 1s;
-
 }
 .small-post-img img {
   width: 100%;
   z-index: 0;
 }
-.small-post-img img:hover{
+.small-post-img img:hover {
   transform: scale(1.05);
-  transition-duration: .5s ;
+  transition-duration: 0.5s;
 }
 
 .more-reviews-list-toggle {
@@ -529,7 +546,6 @@ background-color: #F2F2F2;
   padding-right: 25px;
   padding-bottom: 13px;
   gap: 15px;
-  
 }
 
 .news-posted-date {
@@ -539,7 +555,6 @@ background-color: #F2F2F2;
   font-size: 13px;
   gap: 5px;
   color: #6c6666;
-
 }
 
 .news-comment {
@@ -705,7 +720,7 @@ background-color: #F2F2F2;
 }
 
 /* Review section styles */
-.review-section{
+.review-section {
   display: none;
 }
 .review-section-title {
@@ -756,17 +771,17 @@ background-color: #F2F2F2;
 }
 
 /* Brands Section Style */
-.brands-section{
+.brands-section {
   display: none;
 }
-.brands-name{
+.brands-name {
   padding: 10px;
   border-bottom: 1px solid var(--light-gray);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.brands-name h3{
+.brands-name h3 {
   font-size: 17px;
   font-weight: lighter;
 
@@ -778,85 +793,80 @@ background-color: #F2F2F2;
 }
 
 /* Desktop footer style */
-.desktop-footer{
+.desktop-footer {
   border-left: 10px solid var(--light-gray);
   width: 300px;
   padding: 10px;
-  height: 150px ;
+  height: 150px;
   margin-top: 20px;
-  background-color: #EFEBE9;
+  background-color: #efebe9;
   margin-bottom: 20px;
-  
 }
-.desktop-footer img{
+.desktop-footer img {
   width: 157px;
-
 }
-.desktop-footer span{
+.desktop-footer span {
   font-size: 11px;
 }
-.desktop-footer-links{
-
+.desktop-footer-links {
 }
-.desktop-footer-links a{
+.desktop-footer-links a {
   color: var(--gray);
   margin-right: 3px;
   font-size: 14px;
 }
 /* Footer Section Style */
-footer{
+footer {
   height: 298px;
   background-color: black;
   display: none;
 }
-.footer-navbar{
+.footer-navbar {
   height: 43px;
   background-color: var(--light-gray);
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
-.footer-navbar h2{
+.footer-navbar h2 {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
-
 }
-.footer-social-icon{
+.footer-social-icon {
   display: flex;
   justify-content: space-around;
   margin: 0px 20px;
   margin-top: 20px;
 }
-.footer-social-icon i{
+.footer-social-icon i {
   color: var(--light-gray);
   font-size: 27px;
 }
-.footer-copyright{
+.footer-copyright {
   color: white;
   margin: 30px 0px;
   text-align: center;
 }
-.footer-copyright span{
+.footer-copyright span {
   font-size: 14px;
   font-weight: 400;
 }
-.footer-copyright span a{
+.footer-copyright span a {
   color: #fff;
 }
-.footer-menu{
+.footer-menu {
   text-align: center;
 }
-.footer-menu a{
+.footer-menu a {
   text-decoration: none;
   color: #fff;
   font-weight: lighter;
   border-right: 2px solid #fff;
   padding: 0px 9px 3px 8px;
 }
-.phone-finder-btn{
+.phone-finder-btn {
   background-color: #d50000;
   margin: auto;
   width: 180px;
@@ -868,11 +878,11 @@ footer{
   margin-top: 30px;
   border-radius: 5px;
 }
-.phone-finder-btn img{
+.phone-finder-btn img {
   width: 25px;
   height: 25px;
 }
-.phone-finder-btn h3{
+.phone-finder-btn h3 {
   font-size: 23px;
   font-weight: bold;
 }
@@ -892,6 +902,7 @@ footer{
     width: 100%;
     justify-content: right;
   }
+
   /* Main Section Responsive */
   .sidebar {
     display: none;
@@ -906,13 +917,13 @@ footer{
   .trending-products {
     padding: 0px 20px;
   }
-  .review-section{
+  .review-section {
     display: block;
   }
-  .brands-section{
+  .brands-section {
     display: block;
   }
-  footer{
+  footer {
     display: block;
   }
 }
@@ -921,5 +932,4 @@ footer{
   .trending-products {
     display: none;
   }
-
 }
