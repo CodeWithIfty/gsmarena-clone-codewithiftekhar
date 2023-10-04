@@ -23,6 +23,7 @@ body {
 nav {
   height: 52px;
   background-color: var(--light-gray);
+  z-index: 0;
 }
 
 .nav-container {
@@ -32,6 +33,7 @@ nav {
   background-color: var(--gray);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   overflow: hidden;
 }
 .nav-menu {
@@ -42,6 +44,15 @@ nav {
   background-color: #e0e0e0;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+.search-icon i{
+  padding: 7px 13px;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  background-color: #d50000;
+
 }
 .nav-list {
   display: flex;
@@ -164,7 +175,58 @@ nav {
   justify-content: center;
   align-items: center;
 }
+/* Menu Bar Style */
+.menu-bar{
+  width: 50%;
+  margin-left:25%;
+  margin-right:25%;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.90);
+  position: absolute;
+  z-index: 5;
+  top: -402px;
+  transition-duration: .3s;
+  opacity: 50;
 
+}
+.menu-bar-nav-item-container{
+
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-bar-nav-item{
+  display: flex;
+  flex-direction: column;
+}
+.menu-bar-nav-item a{
+  text-decoration: none;
+  color: #d2c9c9;
+}
+.margin-left{
+  border-left:2px solid white ;
+  padding-left: 10px;
+}
+.phone-finder-btn {
+  background-color: #d50000;
+  margin: auto;
+  width: 120px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.phone-finder-btn img {
+  width: 25px;
+  height: 25px;
+}
+.phone-finder-btn h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
 /* Main Section */
 /* ==================== */
 main {
@@ -172,17 +234,12 @@ main {
   margin: auto;
   display: flex;
   gap: 5px;
-  /* margin-top: 30px; */
-}
-
-.sidebar {
-  width: 30%;
-  background-color: #fff;
-  /* padding-bottom: 100px; */
+  margin-top: 30px;
 }
 
 .main-section {
-  width: 70%;
+  width: 100%;
+  margin: auto;
 }
 
 /* Sidebar Menu Styles */
@@ -510,7 +567,8 @@ main {
 .news-item {
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  width: 100%;
   padding-top: 10px;
 }
 .news-item:hover {
@@ -634,7 +692,7 @@ main {
   margin-bottom: 22px;
   margin-left: 10px;
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 15px;
   z-index: 2;
   /* padding: 8px; */
 }
@@ -760,7 +818,7 @@ main {
 
 /* Featured Section */
 .featured-section {
-  display: none;
+  margin-top: 15px;
 }
 .featured-section-title {
   padding: 7px 0 5px 10px;
@@ -794,10 +852,6 @@ main {
   color: var(--gray);
 }
 
-/* Review section styles */
-.review-section {
-  display: none;
-}
 .review-section-title {
   padding: 7px 0 5px 10px;
   border-bottom: 1px solid var(--light-gray);
@@ -847,7 +901,7 @@ main {
 
 /* Brands Section Style */
 .brands-section {
-  display: none;
+  /* display: none; */
 }
 .brands-name {
   padding: 10px;
@@ -867,45 +921,11 @@ main {
   height: 20px;
 }
 
-/* Desktop footer style */
-.desktop-footer {
-  border-left: 10px solid var(--light-gray);
-  width: 300px;
-  padding: 10px;
-  height: 150px;
-  margin-top: 20px;
-  background-color: #efebe9;
-  margin-bottom: 20px;
-}
-.desktop-footer img {
-  width: 157px;
-}
-.desktop-footer span {
-  font-size: 11px;
-}
-.desktop-footer-links {
-}
-.desktop-footer-links a {
-  color: var(--gray);
-  margin-right: 3px;
-  font-size: 14px;
-}
-.go-to-mobile-version-btn {
-  background-color: var(--light-gray);
-  width: 56%;
-  text-align: center;
 
-  padding: 0px 2px;
-}
-.go-to-mobile-version-btn h4 a {
-  text-decoration: none;
-  color: rgb(48, 40, 40);
-}
 /* Footer Section Style */
 footer {
   height: 298px;
   background-color: black;
-  display: none;
 }
 .footer-navbar {
   height: 43px;
@@ -925,6 +945,9 @@ footer {
   justify-content: space-around;
   margin: 0px 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
+
+
 }
 .footer-social-icon i {
   color: var(--light-gray);
@@ -952,70 +975,46 @@ footer {
   border-right: 2px solid #fff;
   padding: 0px 9px 3px 8px;
 }
-.phone-finder-btn {
-  background-color: #d50000;
-  margin: auto;
-  width: 180px;
-  color: #fff;
+.desktop-version-btn{
+  background-color: var(--light-gray);
+  height: 45px;
+  margin-top: 5px;
+  text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 5px;
-  margin-top: 30px;
-  border-radius: 5px;
 }
-.phone-finder-btn img {
-  width: 25px;
-  height: 25px;
-}
-.phone-finder-btn h3 {
-  font-size: 23px;
-  font-weight: bold;
-}
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-  .search-box {
-    display: none;
-  }
-  .social-icon {
-    display: none;
-  }
-  .nav-container {
-    width: 100%;
-    justify-content: space-between;
-  }
-  .login-user-icons {
-    width: 100%;
-    justify-content: right;
-  }
+.desktop-version-btn a{
+  text-decoration: none;
+  font-size: 20px;
 
-  /* Main Section Responsive */
-  .sidebar {
-    display: none;
+}
+
+
+/* Responsive desing */
+
+@media only screen and (max-width: 2560px){
+  .menu-bar{
+    width:41%;
+    margin: 0% 29.5% ;
   }
-  .main-section {
+}
+@media only screen and (max-width: 1440px){
+  .menu-bar{
+    width: 73%;
+    margin: 0% 13.5% ;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .menu-bar{
     width: 100%;
-    margin: auto;
-  }
-  .featured-section {
-    display: block;
-  }
-  .trending-products {
-    padding: 0px 20px;
-  }
-  .review-section {
-    display: block;
-  }
-  .brands-section {
-    display: block;
-  }
-  footer {
-    display: block;
+    margin: 0;
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .trending-products {
-    display: none;
+@media only screen and (max-width: 768px){
+  .menu-bar{
+    width: 100%;
+    margin: 0;
   }
 }
